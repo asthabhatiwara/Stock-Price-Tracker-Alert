@@ -13,6 +13,11 @@ This is a python based stock market price monitoring system of shares made for s
     * BeautifulSoup - dynamically scrape the required data from the html file extracted
     * smtplib - send mail to the user
     * ssl - secure the connection to the mail host
+    
+![Screenshot (40)](https://user-images.githubusercontent.com/62290422/124660484-e3657c00-dec3-11eb-9858-5130d156aa10.png)
 
 ### Plot.py
 Plots the real-time stock prices for each of the given shares against their current time instant. This would help in visualising the market/share scenario for the user, how the stock price varies for a company , that gives better insight to the trader who wants to invest in that company.
+
+![Screenshot (37)](https://user-images.githubusercontent.com/62290422/124659988-3985ef80-dec3-11eb-86cb-56d2df7feda4.png)
+
