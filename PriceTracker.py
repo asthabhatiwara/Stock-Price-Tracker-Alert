@@ -8,7 +8,7 @@ import datetime
 import smtplib
 import ssl
 
-
+# for tracking stock prices
 def stockPrice(s):
 
     url = "https://finance.yahoo.com/quote/" + s + "?p=" + s + "&guccounter=1&guce_referrer=aHR0cHM6Ly93d3cueW91dHViZS5jb20v&guce_referrer_sig=AQAAANyE07Gd730Uia9-wwV0Kvv1cWBrcVkFOydNDjjy3Db7Zzu81yNlcbXKyXUs_IVWyrwxEASQVjAUjXF8eNRB5eruYnFcq4LFvtt9Tw3ugQvfyik3cngJaGAX1KaeEYL8Yo-yW45wEjGOxUtxixvol6KKBYhfdFowq9seIYw2vfxG"
@@ -33,6 +33,7 @@ def stockPrice(s):
     return float(price)
 
 
+#check for the best deal
 def check_price(R_price):
 
     for indx in range(0, len(R_price)):
@@ -43,6 +44,7 @@ def check_price(R_price):
                 flag[indx] = True
 
 
+ #Price Alert               
 def send_email(indx) :
 
     smtp_server = "smtp.gmail.com"
@@ -73,6 +75,7 @@ def send_email(indx) :
         print("Invalid Credentials")
 
 
+        
 def check():
     for i in flag:
         if (i == False) :
